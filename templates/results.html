@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flask Input Example</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <p>{{ prediction }}</p>
+    <p>At a {{ probability }} probability</p>
+    <a href="/">Back to search</a>
+  </body>
+</html>
