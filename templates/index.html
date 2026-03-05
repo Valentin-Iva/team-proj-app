@@ -9,9 +9,10 @@
     />
     </head>
     <body>
-    
-    <div class="main-section">
+    <header>
       <h1>AI heart disease</h1>
+    </header>
+    <div class="main-section">
       <h1>Enter patient details:</h1>
       <form action="/submit" method="POST">
         <input
@@ -23,7 +24,7 @@
         />
 
         
-          <label>
+          <label class="gender-input">
             <input type="radio" name="gender" value="male" required />
             <span>Male</span>
           </label>
@@ -110,6 +111,7 @@
           placeholder="thal"
           required
         />
+        <br>
         <button type="submit" >Submit</button>
     </div>
     </form>

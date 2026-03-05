@@ -1,20 +1,33 @@
+header {
+  margin: auto;
+  text-align: center;
+  background-color: rgb(244, 68, 68);
+  color: white;
+  padding: 10px;
+}
+
 body,
 html {
   margin: 0;
   padding: 0;
   height: 100%; /* needed for vertical centering */
+  background-color: rgb(246, 227, 223);
 }
 
 .main-section {
   width: 500px;
+  height: 500px;
   margin: auto;
+  margin-top: 10px;
   display: flex; /* makes the div a flex container */
   flex-direction: column; /* stack children vertically */
   align-items: center; /* center horizontally */
-  min-height: 100vh; /* fill the viewport height */
+  min-height: 600px; /* fill the viewport height */
   gap: 10px; /* optional: space between elements */
   text-align: center; /* center text inside h1 etc */
-  background-color: blanchedalmond;
+  background-color: rgb(250, 171, 171);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 
 .input-box {
@@ -25,7 +38,14 @@ html {
 }
 
 button {
-  padding: 10px 20px;
+  padding: 10px 40px;
   margin-top: 10px;
   cursor: pointer;
+  background-color: orangered;
+  border: 5px solid black;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.gender-input {
+  margin: 32px;
 }
