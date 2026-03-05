@@ -1,0 +1,31 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* needed for vertical centering */
+}
+
+.main-section {
+  width: 500px;
+  margin: auto;
+  display: flex; /* makes the div a flex container */
+  flex-direction: column; /* stack children vertically */
+  align-items: center; /* center horizontally */
+  min-height: 100vh; /* fill the viewport height */
+  gap: 10px; /* optional: space between elements */
+  text-align: center; /* center text inside h1 etc */
+  background-color: blanchedalmond;
+}
+
+.input-box {
+  padding: 8px;
+  margin: 5px 0;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}

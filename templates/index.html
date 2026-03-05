@@ -2,105 +2,111 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-    <title>Flask Input Example</title>
+    <title>Heart diseases prediction app</title>
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='styles.css') }}"
     />
     </head>
     <body>
-    <h1>AI heart disease</h1>
-    <div>
+    
+    <div class="main-section">
+      <h1>AI heart disease</h1>
       <h1>Enter patient details:</h1>
       <form action="/submit" method="POST">
         <input
           type="text"
           name="age"
-          class="cool-input"
+          class="input-box"
           placeholder="age"
           required
         />
-        <input
-          type="text"
-          name="gender"
-          class="cool-input"
-          placeholder="gender"
-          required
-        />
+
+        
+          <label>
+            <input type="radio" name="gender" value="male" required />
+            <span>Male</span>
+          </label>
+          <label>
+            <input type="radio" name="gender" value="female" required />
+            <span>Female</span>
+          </label>
+        
+
         <input
           type="text"
           name="cp"
-          class="cool-input"
+          class="input-box"
           placeholder="cp"
           required
         />
         <input
           type="text"
           name="trestbps"
-          class="cool-input"
+          class="input-box"
           placeholder="trestbps"
           required
         />
         <input
           type="text"
           name="chol"
-          class="cool-input"
+          class="input-box"
           placeholder="chol"
           required
         />
         <input
           type="text"
           name="fbs"
-          class="cool-input"
+          class="input-box"
           placeholder="fbs"
           required
         />
         <input
           type="text"
           name="restecg"
-          class="cool-input"
+          class="input-box"
           placeholder="restecg"
           required
         />
         <input
           type="text"
           name="thalach"
-          class="cool-input"
+          class="input-box"
           placeholder="thalach"
           required
         />
         <input
           type="text"
           name="exang"
-          class="cool-input"
+          class="input-box"
           placeholder="exang"
           required
         />
         <input
           type="text"
           name="oldpeak"
-          class="cool-input"
+          class="input-box"
           placeholder="oldpeak"
           required
         />
         <input
           type="text"
           name="slope"
-          class="cool-input"
+          class="input-box"
           placeholder="slope"
           required
         />
         <input
           type="text"
           name="ca"
-          class="cool-input"
+          class="input-box"
           placeholder="ca"
           required
         />
         <input
           type="text"
           name="thal"
-          class="cool-input"
+          class="input-box"
           placeholder="thal"
           required
         />
