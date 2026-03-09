@@ -9,8 +9,15 @@
     />
   </head>
   <body>
-    <p>{{ prediction }}</p>
-    <p>At a {{ probability }} probability</p>
-    <a href="/">Back to search</a>
+    <header>
+      <h1>AI heart disease</h1>
+    </header>
+    <div class="main-section" style="font-size: 30px">
+      <p>{{ prediction }}</p>
+      <p>At a {{ probability }} probability</p>
+      <button onclick="window.location.href = '/'">
+        Test for another patient
+      </button>
+    </div>
   </body>
 </html>

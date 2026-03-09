@@ -43,7 +43,8 @@ button {
   cursor: pointer;
   background-color: orangered;
   border: 5px solid black;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
 }
 
 .gender-input {
