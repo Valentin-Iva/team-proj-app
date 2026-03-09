@@ -53,12 +53,22 @@ def submit():
         prediction="The patient is unlikely to have heart disease."
         probability = model.predict_proba(df)[0][0]
 
-    
+    warnings = []
+
+    if data["chol"] > 240:
+        warnings.append("High cholesterol")
+
+    if data["trestbps"] > 140:
+        warnings.append("High resting blood pressure")
+
+    if data["oldpeak"] > 2:
+        warnings.append("Abnormal ST depression")
 
     return render_template(
         'results.html',
         prediction=prediction,
-        probability=round(probability * 100, 2)
+        probability=round(probability * 100, 2),
+        warnings=warnings
     )
 
 

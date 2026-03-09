@@ -10,107 +10,164 @@
     </head>
     <body>
     <header>
-      <h1>AI heart disease</h1>
+      <h1>Heart Disease Prediction Tool</h1>
     </header>
     <div class="main-section">
       <h1>Enter patient details:</h1>
       <form action="/submit" method="POST">
-        <input
-          type="text"
-          name="age"
-          class="input-box"
-          placeholder="age"
-          required
-        />
+        <table>
+          <tr>
+            <td>
+              <label>Age:</label>
+              <input
+                type="text"
+                name="age"
+                class="input-box"
+                placeholder="age"
+                required
+              />
+            </td>
+            <td>
+              <u>Gender:</u>
+              <label>
+                <input type="radio" name="gender" value="male" class="radio-input" required />
+                <span>Male</span>
+              </label>
+              <label>
+                <input type="radio" name="gender" value="female" required />
+                <span>Female</span>
+              </label>
+            </td>
+          </tr>
 
-        
-          <label class="gender-input">
-            <input type="radio" name="gender" value="male" required />
-            <span>Male</span>
-          </label>
-          <label>
-            <input type="radio" name="gender" value="female" required />
-            <span>Female</span>
-          </label>
-        
+          <tr>
+            <td>
+              <label>CP:</label>
+              <input
+                type="text"
+                name="cp"
+                class="input-box"
+                placeholder="cp"
+                required
+              />
+            </td>
+            <td>
+               <label>trestbps:</label>
+              <input
+                type="text"
+                name="trestbps"
+                class="input-box"
+                placeholder="trestbps"
+                required
+              />
+            </td>
+          </tr>  
+          <tr>
+            <td>
+               <label>chol:</label>
+              <input
+                type="text"
+                name="chol"
+                class="input-box"
+                placeholder="chol"
+                required
+              />
+            </td>
+            <td>
+               <label>fbs:</label>
+              <input
+                type="text"
+                name="fbs"
+                class="input-box"
+                placeholder="fbs"
+                required
+              />
+            </td>
+          </tr>  
 
-        <input
-          type="text"
-          name="cp"
-          class="input-box"
-          placeholder="cp"
-          required
-        />
-        <input
-          type="text"
-          name="trestbps"
-          class="input-box"
-          placeholder="trestbps"
-          required
-        />
-        <input
-          type="text"
-          name="chol"
-          class="input-box"
-          placeholder="chol"
-          required
-        />
-        <input
-          type="text"
-          name="fbs"
-          class="input-box"
-          placeholder="fbs"
-          required
-        />
-        <input
-          type="text"
-          name="restecg"
-          class="input-box"
-          placeholder="restecg"
-          required
-        />
-        <input
-          type="text"
-          name="thalach"
-          class="input-box"
-          placeholder="thalach"
-          required
-        />
-       <input
-          type="text"
-          name="exang"
-          class="input-box"
-          placeholder="exang"
-          required
-        /> 
-        <input
-          type="text"
-          name="oldpeak"
-          class="input-box"
-          placeholder="oldpeak"
-          required
-        />
-        <input
-          type="text"
-          name="slope"
-          class="input-box"
-          placeholder="slope"
-          required
-        />
-        <input
-          type="text"
-          name="ca"
-          class="input-box"
-          placeholder="ca"
-          required
-        />
-        <input
-          type="text"
-          name="thal"
-          class="input-box"
-          placeholder="thal"
-          required
-        />
+          <tr>
+            <td>
+               <label>restecg:</label>
+              <input
+                type="text"
+                name="restecg"
+                class="input-box"
+                placeholder="restecg"
+                required
+              />
+            </td>
+            <td>
+               <label>thalach:</label>
+              <input
+                type="text"
+                name="thalach"
+                class="input-box"
+                placeholder="thalach"
+                required
+              />
+            </td>
+          </tr>  
+
+          <tr>
+            <td>
+              <u>Exang:</u>
+              <label>
+                <input type="radio" name="exang" value="Yes" class="radio-input" required />
+                <span>Yes</span>
+              </label>
+              <label>
+                <input type="radio" name="exang" value="No" required />
+                <span>No</span>
+              </label>
+            </td>
+            <td>
+               <label>oldpeak:</label>
+              <input
+                type="text"
+                name="oldpeak"
+                class="input-box"
+                placeholder="oldpeak"
+                required
+              />
+            </td>
+          </tr>  
+
+          <tr>
+            <td>
+               <label>slope:</label>
+               <input
+                type="text"
+                name="slope"
+                class="input-box"
+                placeholder="slope"
+                required
+              />
+            </td>
+            <td>
+               <label>ca:</label>
+              <input
+                type="text"
+                name="ca"
+                class="input-box"
+                placeholder="ca"
+                required
+              />
+            </td>
+          </tr>  
+
+          <tr>
+            <td>
+              <label>thal:</label>
+              <input
+                type="text"
+                name="thal"
+                class="input-box"
+                placeholder="thal"
+                required
+              />
+            </td>
+          </tr>    
+        </table>
         <br>
         <button type="submit" >Submit</button>
     </div>

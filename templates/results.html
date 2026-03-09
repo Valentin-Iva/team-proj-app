@@ -14,7 +14,15 @@
     </header>
     <div class="main-section" style="font-size: 30px">
       <p>{{ prediction }}</p>
-      <p>At a {{ probability }} probability</p>
+      <p>At a {{ probability }}% probability</p>
+      <div class="info-box">
+        <h2>This patient has:</h2>
+        <ul>
+          {% for w in warnings %}
+          <li>{{ w }}</li>
+          {% endfor %}
+        </ul>
+      </div>
       <button onclick="window.location.href = '/'">
         Test for another patient
       </button>
